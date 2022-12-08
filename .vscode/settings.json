@@ -1,0 +1,45 @@
+// VSCode settings documentation: https://code.visualstudio.com/docs/getstarted/settings
+{
+    // Use the Prettier formatter
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+        // Fix (i.e. lint) files automatically on save
+        "source.fixAll": true
+    },
+    // Format files automatically on save
+    "editor.formatOnSave": true,
+    // Add a visual guide showing the 80-character width
+    "editor.rulers": [80],
+    // Set tab width to 4 spaces
+    "editor.tabSize": 4,
+    // Files and directories to exclude from the file explorer
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/node_modules": true,
+        "**/Thumbs.db": true
+    },
+    // Explicitly require a Prettier config to exist
+    "prettier.requireConfig": true,
+    // Explicitly set the Prettier path to node_modules, to ensure it never
+    // defaults to the [possibly-different] Prettier version packaged with the
+    // VSCode extension
+    "prettier.prettierPath": "./node_modules/prettier",
+    // Files and directories to exclude from searches (patterns from
+    // file.exclude are inherited)
+    "search.exclude": {
+        "**/package-lock.json": true
+    },
+    // If a user has filetype-specific tabSize settings, they'll override the
+    // "editor.tabSize" rule above, so redundantly set it for all relevant
+    // filetypes
+    "[javascript]": {
+        "editor.tabSize": 4
+    },
+    "[json]": {
+        "editor.tabSize": 4
+    },
+    "[yaml]": {
+        "editor.tabSize": 4
+    }
+}

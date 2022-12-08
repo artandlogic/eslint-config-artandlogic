@@ -1,0 +1,38 @@
+{
+    "name": "@artandlogic/eslint-config",
+    "version": "0.1.0",
+    "description": "An ESLint Shareable Config for Art+Logic coding style",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/artandlogic/eslint-config-artandlogic.git"
+    },
+    "keywords": [
+        "eslint"
+    ],
+    "author": "Art+Logic",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/artandlogic/eslint-config-artandlogic/issues"
+    },
+    "homepage": "https://github.com/artandlogic/eslint-config-artandlogic#readme",
+    "scripts": {
+        "prepare": "husky install",
+        "fix": "npm run fix:format && npm run fix:lint",
+        "fix:format": "prettier --ignore-path .gitignore --write .",
+        "fix:lint": "eslint --ignore-path .gitignore --max-warnings 0 --fix .",
+        "test": "npm run test:format && npm run test:lint",
+        "test:format": "prettier --ignore-path .gitignore --check .",
+        "test:lint": "eslint --ignore-path .gitignore --max-warnings 0 ."
+    },
+    "peerDependencies": {
+        "eslint": ">= 8",
+        "eslint-config-prettier": ">= 8"
+    },
+    "devDependencies": {
+        "eslint": ">= 8",
+        "eslint-config-prettier": ">= 8",
+        "husky": "^8.0.1",
+        "prettier": "^2.8.1"
+    }
+}

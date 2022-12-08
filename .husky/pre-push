@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+# Defines a pre-push Git hook (enabled via the Husky library) which runs all
+# automated tests before a push.
+
+. "$(dirname -- "$0")/_/husky.sh"
+set -euo pipefail
+
+# Run all tests
+npm run test
