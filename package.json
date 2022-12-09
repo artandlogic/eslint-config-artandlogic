@@ -25,10 +25,6 @@
         "test:format": "prettier --ignore-path .gitignore --check .",
         "test:lint": "eslint --ignore-path .gitignore --max-warnings 0 ."
     },
-    "peerDependencies": {
-        "eslint": ">= 8",
-        "eslint-config-prettier": ">= 8"
-    },
     "devDependencies": {
         "eslint": ">= 8",
         "eslint-config-prettier": ">= 8",
