@@ -1,3 +1,4 @@
+/* eslint-env node */
 /**
  * @file Configures Prettier for automated code formatting.
  *       Prettier configuration reference: https://prettier.io/docs/en/configuration.html
