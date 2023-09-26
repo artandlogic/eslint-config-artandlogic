@@ -37,12 +37,13 @@ module.exports = {
     ],
     env: {
         // Configure your project environments here, e.g. `browser: true` or
-        // `node: true`. If your repository has multiple projects, then instead
-        // of defining environments here you can define them in additional
-        // `.eslintrc.cjs` files in subdirectories, whose config will
-        // extend/override the root config.
+        // `node: true` and the ECMAScript version used in the project.. If
+        // your repository has multiple projects, then instead of defining
+        // environments here you can define them in additional `.eslintrc.cjs`
+        // files in subdirectories, whose config will extend/override the root
+        // config.
         // https://eslint.org/docs/latest/user-guide/configuring/language-options#specifying-environments
-        //
+        es2023: true,
     },
     rules: {
         // Override rules here if necessary (discouraged in the name of
