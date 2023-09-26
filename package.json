@@ -1,6 +1,6 @@
 {
     "name": "@artandlogic/eslint-config",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "An ESLint Shareable Config for Art+Logic coding style",
     "main": "index.js",
     "repository": {
