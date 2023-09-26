@@ -6,7 +6,7 @@ for Art+Logic coding style.
 
 ## Usage
 
-Shareable configs are designed to work with the extends feature of .eslintrc
+Shareable configs are designed to work with the `extends` feature of .eslintrc
 files. You can learn more about
 [Shareable Configs](https://eslint.org/docs/latest/developer-guide/shareable-configs)
 on the official ESLint website.
@@ -14,7 +14,7 @@ on the official ESLint website.
 To install the config, run
 
 ```
-npm install --save-dev eslint https://github.com/artandlogic/eslint-config-artandlogic
+npm install --save-dev eslint git+https://github.com/artandlogic/eslint-config-artandlogic
 ```
 
 If [Prettier](https://prettier.io/) will be used for code formatting, then
